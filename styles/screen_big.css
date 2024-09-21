@@ -1,0 +1,42 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background-color: black;
+    padding: 0 4%;
+
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex !important;
+}
+
+.menu ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.menu li {
+    padding: 0;
+}
+
+.menu li a {
+    color: white;
+    font-size: 1rem;
+    padding: .9375rem;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.btn-close {
+    display: none;
+}

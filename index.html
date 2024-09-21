@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/deafult.css">
+    <link rel="stylesheet" media="screen and (max-width: 575px)" href="styles/screen_extraSmall.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px) and (max-width: 767px)" href="styles/screen_small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="styles/screen_medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="styles/screen_big.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/screen_extraBig.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Design Responsivo</h1>
+        <button class="btn-menu"><img src="./styles/assets/icon/bars.svg" width="32px" alt="Menu Bar"></button>
+
+        <nav class="menu">
+            <a class="btn-close">X</a>
+            <ul>
+                <li><a href="">Página 1</a></li>
+                <li><a href="">Página 2</a></li>
+                <li><a href="">Página 3</a></li>
+                <li><a href="">Página 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+
+    <script>
+        $(".btn-menu").click(function () {
+            $(".menu").fadeIn(400);
+        });
+
+        $(".btn-close").click(function () {
+            $(".menu").fadeOut();
+            $(this).toggleClass("rotate");
+        });
+    </script>
+
+</body>
+
+</html>
